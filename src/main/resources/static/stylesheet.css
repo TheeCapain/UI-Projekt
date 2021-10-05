@@ -1,0 +1,31 @@
+
+
+* {
+    box-sizing: border-box;
+}
+.top-nav{
+    height: 50px;
+    text-align: center;
+    background-color: green;
+}
+
+.footer-nav{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+}
+.top-box:after{
+margin-left: 50px;
+    content: "";
+    display: table;
+    clear: both;
+}
+.box {
+    position: center;
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
