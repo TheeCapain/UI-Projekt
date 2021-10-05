@@ -2,11 +2,28 @@
     box-sizing: border-box;
 }
 
-.box {
-    float: left;
-    width: 33.33%;
-    padding: 50px;
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
 }
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 
 .clearfix::after {
     content: "";
@@ -15,8 +32,10 @@
 }
 
 .top-nav {
+    font-family: "Segoe UI Black";
     height: 50px;
     text-align: center;
+    font-size: x-large;
     background-color: green;
 }
 
@@ -36,7 +55,17 @@ margin-left: 50px;
 .box {
     position: center;
     float: left;
+    height: 200px;
     width: 33.33%;
     padding: 15px;
 }
+
+.menubox {
+    position: center;
+    float: left;
+    height: 50px;
+    width: 16.6667%;
+    padding: 5px;
+}
+
 
