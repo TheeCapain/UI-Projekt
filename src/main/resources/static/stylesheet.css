@@ -1,9 +1,20 @@
-
-
 * {
     box-sizing: border-box;
 }
-.top-nav{
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.top-nav {
     height: 50px;
     text-align: center;
     background-color: green;
