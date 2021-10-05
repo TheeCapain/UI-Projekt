@@ -36,4 +36,19 @@ public class PageController {
     public String getAbout (){
         return "about";
     }
+
+    @GetMapping("/0-5kon")
+    public String get05kon (){
+        return "0-5kon";
+    }
+
+    @GetMapping("/6-10kon")
+    public String get610kon (){
+        return "6-10kon";
+    }
+
+    @GetMapping("/gymkon")
+    public String getGymkon (){
+        return "gymkon";
+    }
 }
