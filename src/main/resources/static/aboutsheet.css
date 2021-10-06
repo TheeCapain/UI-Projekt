@@ -48,7 +48,7 @@ a:active {
     margin-top: auto}
 
 .top-box:after{
-margin-left: 50px;
+    margin-left: 50px;
     content: "";
     display: table;
     clear: both;
@@ -75,6 +75,31 @@ margin-left: 50px;
     flex-direction: column;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;
+    padding: 10px;
 
+}
 
+.text {
+    text-align: center;
+    padding: 10%;
+}
 
+.aboxone {
+    margin-right: 5%;
+    float: right;
+    height: 50px;
+    padding: 5px;
+}
+
+.aboxtwo {
+    position: center;
+    float: left;
+    height: 50px;
+    width: 25%;
+    margin-left: 10%;
+}
