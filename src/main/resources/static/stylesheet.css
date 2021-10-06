@@ -36,11 +36,18 @@ a:active {
     height: 50px;
     text-align: center;
     font-size: x-large;
-    background-color: red;
+    background-color: green;
 }
 
 .footer-nav {
-
+    margin-top: auto;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: left;
 }
 
 .top-box:after{
