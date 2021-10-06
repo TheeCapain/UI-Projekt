@@ -37,31 +37,27 @@ a:active {
     text-align: center;
     font-size: x-large;
     background-color: green;
-    margin-bottom: 10px;
 }
 
-.footer-nav {
-    position: relative;
+.footer-nav{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
     width: 100%;
-    background-color: red;
-    color: white;
+    background-color: blue;
 }
-
 .top-box:after{
-margin-left: 100px;
+    margin-left: 50px;
     content: "";
     display: table;
     clear: both;
 }
 .box {
-    margin-top: 20px;
-    margin-left: 80px;
     position: center;
     float: left;
     height: 200px;
-    width: 25%;
+    width: 33.33%;
     padding: 15px;
-    border-radius: 5%;
 }
 
 .menubox {
@@ -72,19 +68,10 @@ margin-left: 100px;
     padding: 5px;
 }
 
-.body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.Social-Media{
-    max-height: 25%;
-    max-width: 25%;
-}
-
-
-
-
-
-
+.HaluårsKonurrere {
+    width: 80%;
+    margin:0px auto;
+    content: "";
+    display: table;
+    clear: both;
+ }
