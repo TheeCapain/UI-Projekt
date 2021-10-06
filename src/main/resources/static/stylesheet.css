@@ -42,18 +42,10 @@ a:active {
 .footer-nav {
     margin-top: auto;
     position: relative;
-    left: 0;
-    bottom: 0;
     width: 100%;
-<<<<<<< HEAD
-    background-color: blue;
-    margin-top: auto}
-=======
     background-color: red;
     color: white;
-    text-align: left;
 }
->>>>>>> 6a9605ac06e600dc6aca1a142176cf230889f25f
 
 .top-box:after{
 margin-left: 50px;
