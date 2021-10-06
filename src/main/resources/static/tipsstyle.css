@@ -37,29 +37,38 @@ a:active {
     text-align: center;
     font-size: x-large;
     background-color: green;
-    margin-bottom: 10px;
 }
 
-.footer-nav {
-    position: relative;
+.footer-nav{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
     width: 100%;
-    background-color: red;
-    color: white;
+    background-color: blue;
 }
-
-.top-box:after{
-margin-left: 100px;
-    content: "";
-    display: table;
-    clear: both;
-}
-.box {
-    margin-top: 20px;
-    margin-left: 80px;
+.top-box{
     position: center;
     float: left;
     height: 200px;
-    width: 25%;
+    width: 75%;
+    padding: 15px;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.box {
+    align: center;
+    margin: 63px;
+    text-align: center;
+    float: right;
+    height: 200px;
+    width: 40%;
     padding: 15px;
 }
 
@@ -70,16 +79,3 @@ margin-left: 100px;
     width: 16.6667%;
     padding: 5px;
 }
-
-.body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
-
-
-
