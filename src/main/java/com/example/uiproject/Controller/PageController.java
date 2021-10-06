@@ -1,7 +1,12 @@
 package com.example.uiproject.Controller;
 
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.annotation.Resources;
+import java.lang.annotation.Repeatable;
 
 @Controller
 public class PageController {
@@ -18,7 +23,7 @@ public class PageController {
 
     @GetMapping("/6-10")
     public String getMiddleschool (){
-        return "middleschool";
+        return "middleschool6.-10";
     }
 
     @GetMapping("/gym")
@@ -50,4 +55,5 @@ public class PageController {
     public String getGymkon (){
         return "gymkon";
     }
+
 }
