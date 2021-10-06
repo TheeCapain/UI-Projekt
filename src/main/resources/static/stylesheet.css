@@ -36,16 +36,13 @@ a:active {
     height: 50px;
     text-align: center;
     font-size: x-large;
-    background-color: green;
+    background-color: red;
 }
 
-.footer-nav{
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: blue;
+.footer-nav {
+
 }
+
 .top-box:after{
 margin-left: 50px;
     content: "";
