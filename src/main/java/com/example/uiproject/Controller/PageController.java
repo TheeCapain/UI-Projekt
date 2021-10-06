@@ -10,6 +10,10 @@ public class PageController {
     public String getIndex (){
         return "index";
     }
+    @GetMapping("/test")
+    public String getTest (){
+        return "test";
+    }
 
     @GetMapping("/0-5")
     public String getPreschool (){

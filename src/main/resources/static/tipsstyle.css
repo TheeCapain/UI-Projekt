@@ -39,33 +39,36 @@ a:active {
     background-color: green;
 }
 
-.footer-nav {
-    margin-top: auto;
-    position: relative;
-    left: 0;
+.footer-nav{
+    position: absolute;
     bottom: 0;
+    height: 100px;
     width: 100%;
-<<<<<<< HEAD
     background-color: blue;
-    margin-top: auto}
-=======
-    background-color: red;
-    color: white;
-    text-align: left;
 }
->>>>>>> 6a9605ac06e600dc6aca1a142176cf230889f25f
-
-.top-box:after{
-margin-left: 50px;
-    content: "";
-    display: table;
-    clear: both;
-}
-.box {
+.top-box{
     position: center;
     float: left;
     height: 200px;
-    width: 33.33%;
+    width: 75%;
+    padding: 15px;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.box {
+    align: center;
+    margin: 63px;
+    text-align: center;
+    float: right;
+    height: 200px;
+    width: 40%;
     padding: 15px;
 }
 
@@ -76,13 +79,3 @@ margin-left: 50px;
     width: 16.6667%;
     padding: 5px;
 }
-
-.body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
