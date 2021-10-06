@@ -39,13 +39,6 @@ a:active {
     background-color: green;
 }
 
-.footer-nav{
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: blue;
-}
 .top-box{
     position: center;
     float: left;
@@ -78,4 +71,23 @@ a:active {
     height: 50px;
     width: 16.6667%;
     padding: 5px;
+}
+
+.footer-nav {
+    position: relative;
+    width: 100%;
+    background-color: red;
+    color: white;
+
+    /*
+    margin-top: auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: left;
+
+     */
 }
