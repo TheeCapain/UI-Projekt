@@ -1,5 +1,8 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 a:link {
@@ -13,11 +16,13 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
 }
+
 a:hover {
     color: black;
     background-color: transparent;
     text-decoration: none;
 }
+
 a:active {
     color: black;
     background-color: transparent;
@@ -31,28 +36,95 @@ a:active {
     display: table;
 }
 
+body {
+    background-color: white;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 150px;
+
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    display: block;
+    background-color: #228c22;
+}
+
+.inner_header {
+    width: 1000px;
+    height: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Calibri Light", serif;
+    font-size: 32px;
+}
+
+.logo_container h1 span {
+    font-weight: 800;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: "Calibri Light", cursive;
+    font-size: 16px;
+}
+
+
+/*
 .top-nav {
     font-family: "Segoe UI Black";
     height: 50px;
-    text-align: center;
-    font-size: x-large;
-    background-color: green;
+    text-align: right;
+    font-size: medium;
+    background-color: white;
     margin-bottom: 10px;
 }
+*/
 
-.footer-nav {
-    position: relative;
-    width: 100%;
-    background-color: red;
-    color: white;
-}
 
-.top-box:after{
-margin-left: 100px;
+.top-box:after {
+    margin-left: 100px;
     content: "";
     display: table;
     clear: both;
 }
+
 .box {
     margin-top: 20px;
     margin-left: 80px;
@@ -61,6 +133,7 @@ margin-left: 100px;
     height: 200px;
     width: 25%;
     padding: 15px;
+    border-radius: 5%;
 }
 
 .menubox {
@@ -76,6 +149,29 @@ margin-left: 100px;
     display: flex;
     flex-direction: column;
 }
+
+.Social-Media {
+    max-height: 25%;
+    max-width: 25%;
+}
+
+.footer-nav {
+    position: relative;
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+
+.footer{
+    width: 100%;
+    height: 75px;
+    display: block;
+    background-color: #7e685a;
+}
+
+
+
+
 
 
 

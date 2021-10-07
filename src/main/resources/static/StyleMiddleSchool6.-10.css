@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.top-nav {
+    font-family: "Segoe UI Black";
+    height: 50px;
+    text-align: center;
+    font-size: x-large;
+    background-color: green;
+}
+
+.footer-nav{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+}
+.top-box:after{
+    margin-left: 50px;
+    content: "";
+    display: table;
+    clear: both;
+}
+.box {
+    position: center;
+    float: left;
+    height: 200px;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.menubox {
+    position: center;
+    float: left;
+    height: 50px;
+    width: 16.6667%;
+    padding: 5px;
+}
+
+.HaluårsKonurrere {
+    width: 80%;
+    margin:0px auto;
+    content: "";
+    display: table;
+    clear: both;
+ }
