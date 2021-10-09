@@ -42,7 +42,8 @@ body {
 
 .logo {
     position: absolute;
-    margin-left: 150px;
+    margin-left: 15%;
+    padding-right: 50%;
 
 }
 
@@ -62,12 +63,15 @@ body {
 
 .logo_container {
     height: 100%;
+    position: relative;
+    margin-left: 15%;
     display: table;
     float: left;
 }
 
 .logo_container h1 {
     color: white;
+    margin-left: 8%;
     height: 100%;
     display: table-cell;
     vertical-align: middle;
@@ -80,6 +84,7 @@ body {
 }
 
 .navigation {
+    position: relative;
     float: right;
     height: 100%;
 }
@@ -93,7 +98,7 @@ body {
     height: 100%;
     display: table;
     float: left;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 .navigation a li {
@@ -114,6 +119,11 @@ body {
     font-size: medium;
     background-color: white;
     margin-bottom: 10px;
+}
+
+.Social-Media {
+    max-height: 25%;
+    max-width: 25%;
 }
 */
 
@@ -150,29 +160,132 @@ body {
     flex-direction: column;
 }
 
-.Social-Media {
-    max-height: 25%;
-    max-width: 25%;
-}
-
-.footer-nav {
+.numbertext{
     position: relative;
-    width: 100%;
-    background-color: red;
-    color: white;
+    max-width: 100%;
+    maring: 0 auto;
 }
 
-.footer{
-    width: 100%;
-    height: 75px;
+.numbertext .text{
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+}
+
+
+.footer {
+height: auto;
+    width: 100vw;
     display: block;
-    background-color: #7e685a;
+    overflow: hidden;
+    padding: 25px 0;
+    box-sizing: border-box;
+    background-color: #000080;
+}
+
+.inner_footer {
+    float: left;
+    display: block;
+    margin: 0;
+    width: 750px;
+    height: 80%;
+
+}
+
+.inner_footer .logo_container {
+    width: 35%;
+    height: 100%;
+    display: block;
+}
+
+#footerLogo {
+    margin-left: 10%;
+    width: 150px;
+    height: auto;
+}
+
+.inner_footer .footer_third {
+    width: calc(21.667 - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.inner_footer .footer_third:last-child {
+    margin-right: 0;
+}
+
+.inner_footer .footer_fourth{
+    border-radius: 50px;
+    width: calc(21.667 - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.inner_footer .footer_fourth:last-child {
+    margin-right: 0;
+}
+#footertitel {
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+#Contact_info {
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.footer_fourth{
+    width: 300px;
+    float: right;
+    margin-right: 10%;
 }
 
 
+.footer_fourth a{
+    margin-right: 10%;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+
+}
 
 
+.footer_fourth p{
+    margin-right: 10%;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
 
+}
+.footer_third a {
+    margin-right: 20%;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 8%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
 
-
-
+}

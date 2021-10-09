@@ -57,14 +57,12 @@
             position: absolute;
             bottom: 8px;
             width: 100%;
-            text-align: center;
         }
 
         /* Number text (1/3 etc) */
         .numbertext {
             color: #f2f2f2;
             font-size: 12px;
-            padding: 8px 12px;
             position: absolute;
             top: 0;
         }
@@ -128,13 +126,12 @@
 <div class="header">
     <div class="logo">
         <img style="font-size:8vw;" src="https://iconape.com/wp-content/png_logo_vector/environmental-friendly-logo.png"
-             alt="Green School logo" width="75" height="75" border="0">
+             alt="" width="75" height="75">
     </div>
 
     <div class="inner_header">
         <div class="logo_container">
-
-            <h1>Green<span>school</span></h1>
+            <h1>Green<span style="font-weight: 500">school</span></h1>
         </div>
         <ul class="navigation">
             <a href="/">
@@ -196,29 +193,38 @@
 </div>
 
 
-</body>
-<body>
-
 <div class="slideshow-container">
 
     <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="https://i.pinimg.com/originals/61/e7/8b/61e78b08a8dd18779132812218a9f2a8.jpg" style="width:100%">
-        <div class="text"></div>
+        <div class="numbertext">
+            <img src="https://i.pinimg.com/originals/61/e7/8b/61e78b08a8dd18779132812218a9f2a8.jpg" style="width:100%">
+            <div class="text">
+                <h2>Brug for hjælp?</h2>
+                <p>Kontakt os i dag, så vi kan hjælpe din uddannelses institution med at bekæmpe madspild.</p>
+            </div>
+        </div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="https://wallpaperaccess.com/full/251681.jpg"
-             style="width:100%">
-        <div class="text"></div>
+        <div class="numbertext">
+            <img src="https://wallpaperaccess.com/full/251681.jpg"
+                 style="width:100%">
+            <div class="text">
+                <h2>Årets Rap konkurrence er i gang!</h2>
+                <p>Se reglerne her!<a href="/6-10kon"></a></p>
+            </div>
+        </div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="https://wallpaperaccess.com/full/2245139.jpg"
-             style="width:100%">
-        <div class="text"></div>
+        <div class="numbertext">
+            <img src="https://wallpaperaccess.com/full/2245139.jpg"
+                 style="width:100%">
+            <div class="text">
+                <h2>Gør madspild til et mad spil!</h2>
+                <p>Klik her for at se sjove spil, som lærer dig om hvordan man sortere mad ordentligt og sjovt!<a href="/6-10kon"></a></p>
+            </div>
+        </div>
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -233,29 +239,27 @@
     <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
-<<<<<<< HEAD
-
 <div class="footer">
-    <div class="contact_info">
-        <a href="https://www.google.com/maps/place/Guldbergsgade,+2200+K%C3%B8benhavn/@55.6937909,12.5526735,17z/data=!4m13!1m7!3m6!1s0x465253ab2b0f4c4d:0x952935e639916e58!2sGuldbergsgade,+2200+K%C3%B8benhavn!3b1!8m2!3d55.6937909!4d12.5548622!3m4!1s0x465253ab2b0f4c4d:0x952935e639916e58!8m2!3d55.6937909!4d12.5548622">
-            <li>Adresse: Guldbergsgade 29N 2200 København N</li>
-        </a>
-        <a href="">
-            <li>Telefon: +45 46 46 00 00</li>
-        </a>
-        <a href="mailto:Kea@Kea.dk">
-            <li>Mail: Madspild@Madspild.dk</li>
-        </a>
+    <div class="inner_footer">
+        <div class="logo_container"></div>
+        <img id="footerLogo" src=" https://iconape.com/wp-content/png_logo_vector/environmental-friendly-logo.png"
+             alt="">
     </div>
-    <div class="SoMe">
-        <li href="">
-        </li>
+
+    <div class="footer_fourth">
+        <h1 id="Contact_info">Kontakt info</h1>
+        <a href=""> Adresse: Guldbergsgade 29N 2200 København N</a>
+        <a href="">Telefon nr: Telefon: +45 46 46 00 00</a>
+        <a href="mailto:Kea@Kea.dk">Mail: Madspild@Madspild.dk</a>
+
+
     </div>
+
+
 </div>
 
+
 <!--
-=======
->>>>>>> 8124ff6d2f7abebfc2ed0cef9eb0571366e994dd
 <div class="footer-nav">
 
     <p>Adresse: Guldbergsgade 29N 2200 København N</p>
@@ -272,6 +276,8 @@
 </div>
 -->
 
+
+<!--Javascript til slideren-->
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
