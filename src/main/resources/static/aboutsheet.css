@@ -1,5 +1,8 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 a:link {
@@ -13,11 +16,13 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
 }
+
 a:hover {
     color: black;
     background-color: transparent;
     text-decoration: none;
 }
+
 a:active {
     color: black;
     background-color: transparent;
@@ -31,43 +36,75 @@ a:active {
     display: table;
 }
 
-.top-nav {
-    font-family: "Segoe UI Black";
-    height: 50px;
-    text-align: center;
-    font-size: x-large;
-    background-color: green;
+body {
+    background-color: white;
 }
 
-.footer-nav{
+.logo {
     position: absolute;
-    bottom: 0;
-    height: 100px;
+    margin-left: 4%;
+
+}
+
+.header {
     width: 100%;
-    background-color: blue;
-    margin-top: auto}
+    height: 75px;
+    display: block;
+    background-color: #228c22;
+}
 
-.top-box:after{
-    margin-left: 50px;
-    content: "";
+.inner_header {
+    width: 1000px;
+    height: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container {
+    height: 100%;
     display: table;
-    clear: both;
-}
-.box {
-    position: center;
     float: left;
-    height: 200px;
-    width: 33.33%;
-    padding: 15px;
 }
 
-.menubox {
-    position: center;
-    float: left;
-    height: 50px;
-    width: 16.6667%;
-    padding: 5px;
+.logo_container h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Calibri Light", serif;
+    font-size: 32px;
 }
+
+.logo_container h1 span {
+    font-weight: 800;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: "Calibri Light", cursive;
+    font-size: 16px;
+}
+
 
 .body {
     min-height: 100vh;
@@ -81,7 +118,6 @@ a:active {
     margin-right: auto;
     width:75%;
     padding: 10px;
-
 }
 
 .text {
