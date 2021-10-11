@@ -1,7 +1,46 @@
 * {
-    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
+
+.tips-center {
+    align: center;
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.tipboxes {
+    float: left;
+    padding: 15px;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.tombox {
+    height: 5%;
+    background-color: white;
+}
+
+.tipbox {
+    float: right;
+    flex: auto;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+    border-radius: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+/*
 a:link {
     color: black;
     background-color: transparent;
@@ -13,11 +52,13 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
 }
+
 a:hover {
     color: black;
     background-color: transparent;
     text-decoration: none;
 }
+
 a:active {
     color: black;
     background-color: transparent;
@@ -31,45 +72,80 @@ a:active {
     display: table;
 }
 
-.top-nav {
-    font-family: "Segoe UI Black";
-    height: 50px;
-    text-align: center;
-    font-size: x-large;
-    background-color: green;
+body {
+    background-color: white;
 }
 
-.footer-nav{
+.logo {
     position: absolute;
-    bottom: 0;
-    height: 100px;
+    margin-left: 5%;
+
+}
+
+.header {
     width: 100%;
-    background-color: blue;
+    height: 75px;
+    display: block;
+    background-color: #228c22;
 }
-.top-box{
-    position: center;
+
+.inner_header {
+    width: 1000px;
+    height: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container {
+    height: 100%;
+    display: table;
     float: left;
-    height: 200px;
-    width: 75%;
-    padding: 15px;
-    text-align: center;
 }
 
-.center {
-    margin: auto;
-    width: 60%;
-    border: 3px solid #73AD21;
-    padding: 10px;
+.logo_container h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Calibri Light", serif;
+    font-size: 32px;
 }
 
-.box {
-    align: center;
-    margin: 63px;
-    text-align: center;
+.logo_container h1 span {
+    font-weight: 800;
+}
+
+.navigation {
     float: right;
-    height: 200px;
-    width: 40%;
-    padding: 15px;
+    height: 100%;
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: "Calibri Light", cursive;
+    font-size: 16px;
+}
+
+.top-box:after {
+    margin-left: 100px;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .menubox {
@@ -79,3 +155,29 @@ a:active {
     width: 16.6667%;
     padding: 5px;
 }
+
+.Social-Media {
+    max-height: 25%;
+    max-width: 25%;
+}*/
+
+/*
+.tipbox1 {
+    margin-top: 20px;
+    background-color: aquamarine;
+    margin-left: 80px;
+    position: center;
+    float: left;
+    height: 200px;
+    width: 50%;
+    padding: 15px;
+    border-radius: 5%;
+}*/
+/*
+.menubox {
+    position: center;
+    float: left;
+    height: 50px;
+    width: 16.6667%;
+    padding: 5px;
+}*/
