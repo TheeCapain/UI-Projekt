@@ -1,5 +1,9 @@
 * {
-    box-sizing: border-box;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    list-style: none;
+    text-decoration: none;
+    /*box-sizing: border-box;*/
 }
 
 a:link {
@@ -13,11 +17,13 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
 }
+
 a:hover {
     color: black;
     background-color: transparent;
     text-decoration: none;
 }
+
 a:active {
     color: black;
     background-color: transparent;
@@ -31,38 +37,154 @@ a:active {
     display: table;
 }
 
-.top-nav {
-    font-family: "Segoe UI Black";
-    height: 50px;
-    text-align: center;
-    font-size: x-large;
-    background-color: green;
+body {
+    background-color: white;
 }
 
-.top-box{
+.logo {
+    position: absolute;
+    margin-left: 5%;
+
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    display: block;
+    background-color: #228c22;
+}
+
+.inner_header {
+    width: 1000px;
+    height: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Calibri Light", serif;
+    font-size: 32px;
+}
+
+.logo_container h1 span {
+    font-weight: 800;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: "Calibri Light", cursive;
+    font-size: 16px;
+}
+
+.top-box:after {
+    margin-left: 100px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*.box {
+    margin-top: 20px;
+    margin-left: 80px;
     position: center;
     float: left;
     height: 200px;
-    width: 75%;
+    width: 25%;
     padding: 15px;
-    text-align: center;
+    border-radius: 5%;
+}*/
+
+.menubox {
+    position: center;
+    float: left;
+    height: 50px;
+    width: 16.6667%;
+    padding: 5px;
+}
+/*
+.body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}*/
+
+.Social-Media {
+    max-height: 25%;
+    max-width: 25%;
 }
 
-.center {
+
+
+.tips-center {
     margin: auto;
     width: 60%;
     border: 3px solid #73AD21;
     padding: 10px;
 }
 
-.box {
+/*.tipboxes {
     align: center;
-    margin: 63px;
+    margin: 5%;
     text-align: center;
     float: right;
-    height: 200px;
-    width: 40%;
+    width: 80%;
     padding: 15px;
+    background-color: pink;
+}*/
+
+.tipbox {
+    flex: 0 0 auto;
+    width: 25%;
+    /*align: center;*/
+    /*margin: 10px;*/
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+    /*float: right;*/
+    /*width: 40%;*/
+    /*padding: 15px;*/
+    /*border-radius: 5%;*/
+}
+
+.tipbox1 {
+    margin-top: 20px;
+    background-color: aquamarine;
+    margin-left: 80px;
+    position: center;
+    float: left;
+    height: 200px;
+    width: 50%;
+    padding: 15px;
+    border-radius: 5%;
 }
 
 .menubox {
@@ -73,21 +195,10 @@ a:active {
     padding: 5px;
 }
 
-.footer-nav {
-    position: relative;
+#footer{
     width: 100%;
-    background-color: red;
-    color: white;
-
-    /*
-    margin-top: auto;
-    position: fixed;
-    left: 0;
+    height: 25%;
+    display: block;
+    background-color: #7e685a;
     bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: left;
-
-     */
 }
