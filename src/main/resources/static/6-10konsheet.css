@@ -43,6 +43,7 @@ body {
 .logo {
     position: absolute;
     margin-left: 4%;
+
 }
 
 .header {
@@ -50,6 +51,13 @@ body {
     height: 75px;
     display: block;
     background-color: #228c22;
+}
+
+.tov {
+    text-align: center;
+    font-size: xx-large;
+    font-family: Calibri;
+
 }
 
 .inner_header {
@@ -104,37 +112,103 @@ body {
     font-size: 16px;
 }
 
-
 .body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.center {
+.ul {
+    list-style-type: circle;
+}
+/*
+.regelbox {
+    border: 3px solid black;
+    width: 50%;
+    float: left;
+}
+ */
+.header {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.submitbox {
+    display: inline-block;
+    float: left;
+}
+
+.bigbox {
+    width: 100%;
+    display: inline-block;
+}
+
+.infotext {
+    margin-right: auto;
+    width: 45%;
+    text-align: left;
+    height: 100%;
+    float: left;
+}
+
+.infowrite {
+    margin-left: 30%;
+    width: 15%;
+    height: 100%;
+}
+
+.top-box:after {
+    margin-left: 100px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box1 {
+    margin-top: 20px;
+    margin-left: 100px;
+    position: center;
+    float: left;
+    height: 200px;
+    width: 30%;
+    padding: 15px;
+    border-radius: 5%;
+}
+
+.box2 {
+    margin-top: 20px;
+    margin-right: 100px;
+    position: center;
+    float: right;
+    height: 200px;
+    width: 30%;
+    padding: 15px;
+    border-radius: 5%;
+}
+
+.box3 {
+    float: left;
+}
+
+.img {
+    height: auto;
+    display: block;
+}
+
+.centerimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:75%;
-    padding: 10px;
-}
-
-.text {
-    text-align: center;
-    padding: 10%;
-}
-
-.aboxone {
-    margin-right: 5%;
-    float: right;
-    height: 50px;
-    padding: 5px;
-}
-
-.aboxtwo {
-    position: center;
-    float: left;
-    height: 50px;
-    width: 25%;
-    margin-left: 10%;
+    width: 50%;
 }

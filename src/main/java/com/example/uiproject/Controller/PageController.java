@@ -1,12 +1,7 @@
 package com.example.uiproject.Controller;
 
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.annotation.Resources;
-import java.lang.annotation.Repeatable;
 
 @Controller
 public class PageController {
@@ -47,7 +42,7 @@ public class PageController {
 
     @GetMapping("/0-5kon")
     public String get05kon (){
-        return "0-5kon";
+        return "6-10kon";
     }
 
     @GetMapping("/6-10kon")
