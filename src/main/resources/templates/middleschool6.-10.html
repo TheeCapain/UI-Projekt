@@ -2,12 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            padding: 15px;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 15px;
+            border-radius: 1px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 2px;
+            background-color: #bbb;
+            border-radius: 2%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {
+                font-size: 11px
+            }
+        }
+    </style>
     <title>Hjem</title>
-    <link rel="stylesheet" href="StyleMiddleSchool6.-10.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="slidetyle.css">
 
 </head>
 <body>
-<!--top-nav start#-->
+
+<div class="header">
+    <div class="logo">
+        <img style="font-size:8vw;" src="https://iconape.com/wp-content/png_logo_vector/environmental-friendly-logo.png"
+             alt="" width="75" height="75">
+    </div>
+
+    <div class="inner_header">
+        <div class="logo_container">
+            <h1>Green<span style="font-weight: 500">school</span></h1>
+        </div>
+        <ul class="navigation">
+            <a href="/">
+                <li>Hjem</li>
+            </a>
+            <a href="/0-5">
+                <li>0-5. klasse</li>
+            </a>
+            <a href="/6-10">
+                <li>6-10. klasse</li>
+            </a>
+            <a href="/gym">
+                <li>Gymnasium</li>
+            </a>
+            <a href="/tips">
+                <li>Tips</li>
+            </a>
+            <a href="/about">
+                <li>Om os</li>
+            </a>
+        </ul>
+    </div>
+</div>
+<!--
 <div class="top-nav">
     <div class="menubox" align="center">
         <a href="/index">Hjem</a>
@@ -27,37 +175,140 @@
     <div class="menubox" align="center">
         <a href="/about">Om os</a>
     </div>
-</div>
-<!--top-nav end#-->
 
-<div class="HaluårsKonurrere">
+</div>
+-->
+
+
+<div class="top-box">
     <div class="box" style="background-color: aquamarine" align="center">
         <a href="/preschool">0.-5. Klasse</a>
     </div>
     <div class="box" style="background-color: aqua" align="center">
         <a href="/middleschool">6.-10. Klasse</a>
     </div>
+    <div class="box" style="background-color: cornflowerblue" align="center">
+        <a href="/highschool">Gymnasium</a>
+    </div>
 </div>
 
-<!--HaluårsKonurrere start#
-<div class="HaluårsKonurrere">
-    <h2>Calculate the total width:</h2>
 
-    <div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">
+            <img src="https://i.pinimg.com/originals/61/e7/8b/61e78b08a8dd18779132812218a9f2a8.jpg" style="width:100%">
+            <div class="text">
+                <h2>Brug for hjælp?</h2>
+                <p>Kontakt os i dag, så vi kan hjælpe din uddannelses institution med at bekæmpe madspild.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">
+            <img src="https://wallpaperaccess.com/full/251681.jpg"
+                 style="width:100%">
+            <div class="text">
+                <h2>Årets Rap konkurrence er i gang!</h2>
+                <p>Se reglerne her!<a href="/6-10kon"></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">
+            <img src="https://wallpaperaccess.com/full/2245139.jpg"
+                 style="width:100%">
+            <div class="text">
+                <h2>Gør madspild til et mad spil!</h2>
+                <p>Klik her for at se sjove spil, som lærer dig om hvordan man sortere mad ordentligt og sjovt!<a href="/6-10kon"></a></p>
+            </div>
+        </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
-HaluårsKonurrere end#-->
+<br>
 
-<!--footer-nav start#-->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="footer">
+    <div class="inner_footer">
+        <div class="logo_container"></div>
+        <img id="footerLogo" src=" https://iconape.com/wp-content/png_logo_vector/environmental-friendly-logo.png"
+             alt="">
+    </div>
+
+    <div class="footer_fourth">
+        <h1 id="Contact_info">Kontakt info</h1>
+        <a href=""> Adresse: Guldbergsgade 29N 2200 København N</a>
+        <a href="">Telefon nr: Telefon: +45 46 46 00 00</a>
+        <a href="mailto:Kea@Kea.dk">Mail: Madspild@Madspild.dk</a>
+
+
+    </div>
+
+
+</div>
+
+
+<!--
 <div class="footer-nav">
-    <footer>
-        <p>Adresse: Guldbergsgade 29N 2200 København N</p>
-        <p>Telefon: +45 46 46 00 00</p>
-        <p>Mail: <a href="mailto:Kea@Kea.dk">Madspild@Madspild.dk</a></p>
-    </footer>
+
+    <p>Adresse: Guldbergsgade 29N 2200 København N</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/81/81341.png" alt="" width="25" height="25" align="right">
+    <p></p>
+    <img src="https://i0.wp.com/voxeuropae.com/wp-content/uploads/2019/02/SKq9yH-black-and-white-instagram-logo-png.png?fit=1200%2C1200&amp;ssl=1&amp;w=640"
+         alt="" width="25" height="25" align="right">
+    <p>Telefon: +45 46 46 00 00</p>
+
+    <p>Mail: <a href="mailto:Kea@Kea.dk">Madspild@Madspild.dk</a></p>
+    <div class="Social-Media">
+
+    </div>
 </div>
-<!--footer-nav end#-->
+-->
 
 
+<!--Javascript til slideren-->
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
 </body>
 </html>

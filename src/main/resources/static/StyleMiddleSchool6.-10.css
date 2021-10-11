@@ -1,5 +1,8 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 a:link {
@@ -13,11 +16,13 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
 }
+
 a:hover {
     color: black;
     background-color: transparent;
     text-decoration: none;
 }
+
 a:active {
     color: black;
     background-color: transparent;
@@ -31,33 +36,114 @@ a:active {
     display: table;
 }
 
+body {
+    background-color: white;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 15%;
+    padding-right: 50%;
+
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    display: block;
+    background-color: #228c22;
+}
+
+.inner_header {
+    width: 1000px;
+    height: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container {
+    height: 100%;
+    position: relative;
+    margin-left: 15%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1 {
+    color: white;
+    margin-left: 8%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Calibri Light", serif;
+    font-size: 32px;
+}
+
+.logo_container h1 span {
+    font-weight: 800;
+}
+
+.navigation {
+    position: relative;
+    float: right;
+    height: 100%;
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: "Calibri Light", cursive;
+    font-size: 16px;
+}
+
+
+/*
 .top-nav {
     font-family: "Segoe UI Black";
     height: 50px;
-    text-align: center;
-    font-size: x-large;
-    background-color: green;
+    text-align: right;
+    font-size: medium;
+    background-color: white;
+    margin-bottom: 10px;
 }
 
-.footer-nav{
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: blue;
+.Social-Media {
+    max-height: 25%;
+    max-width: 25%;
 }
-.top-box:after{
-    margin-left: 50px;
+*/
+
+
+.top-box:after {
+    margin-left: 100px;
     content: "";
     display: table;
     clear: both;
 }
+
 .box {
+    margin-top: 20px;
+    margin-left: 80px;
     position: center;
     float: left;
     height: 200px;
-    width: 33.33%;
+    width: 25%;
     padding: 15px;
+    border-radius: 5%;
 }
 
 .menubox {
@@ -68,10 +154,138 @@ a:active {
     padding: 5px;
 }
 
-.HaluårsKonurrere {
-    width: 80%;
-    margin:0px auto;
-    content: "";
-    display: table;
-    clear: both;
- }
+.body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.numbertext{
+    position: relative;
+    max-width: 100%;
+    maring: 0 auto;
+}
+
+.numbertext .text{
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+}
+
+
+.footer {
+    height: auto;
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 25px 0;
+    box-sizing: border-box;
+    background-color: #000080;
+}
+
+.inner_footer {
+    float: left;
+    display: block;
+    margin: 0;
+    width: 750px;
+    height: 80%;
+
+}
+
+.inner_footer .logo_container {
+    width: 35%;
+    height: 100%;
+    display: block;
+}
+
+#footerLogo {
+    margin-left: 10%;
+    width: 150px;
+    height: auto;
+}
+
+.inner_footer .footer_third {
+    width: calc(21.667 - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.inner_footer .footer_third:last-child {
+    margin-right: 0;
+}
+
+.inner_footer .footer_fourth{
+    border-radius: 50px;
+    width: calc(21.667 - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.inner_footer .footer_fourth:last-child {
+    margin-right: 0;
+}
+#footertitel {
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+#Contact_info {
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.footer_fourth{
+    width: 300px;
+    float: right;
+    margin-right: 10%;
+}
+
+
+.footer_fourth a{
+    margin-right: 10%;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+
+}
+
+
+.footer_fourth p{
+    margin-right: 10%;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+
+}
+.footer_third a {
+    margin-right: 20%;
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 8%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+
+}
