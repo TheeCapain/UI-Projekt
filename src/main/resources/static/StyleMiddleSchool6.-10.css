@@ -110,26 +110,8 @@ body {
     font-size: 16px;
 }
 
-
-/*
-.top-nav {
-    font-family: "Segoe UI Black";
-    height: 50px;
-    text-align: right;
-    font-size: medium;
-    background-color: white;
-    margin-bottom: 10px;
-}
-
-.Social-Media {
-    max-height: 25%;
-    max-width: 25%;
-}
-*/
-
-
 .top-box:after {
-    margin-left: 100px;
+    margin-left: 200px;
     content: "";
     display: table;
     clear: both;
@@ -141,10 +123,43 @@ body {
     position: center;
     float: left;
     height: 200px;
+    width: 42%;
+    padding: 15px;
+    border-radius: 5%;
+}
+.top-box1 {
+    margin-left: 100px;
+    width: 300%;
+    content: "";
+    display: table;
+    clear: both;
+}
+.box1 {
+    margin-top: 20px;
+    margin-left: 80px;
+    position: center;
+
+    float: left;
+    height: 200px;
     width: 25%;
     padding: 15px;
     border-radius: 5%;
 }
+
+
+.myYoutube {
+float: right;
+
+    width: 85%;
+    padding: 1%;
+}
+#youtube{
+
+    width: 85%;
+
+
+}
+
 
 .menubox {
     position: center;
@@ -160,21 +175,6 @@ body {
     flex-direction: column;
 }
 
-.numbertext{
-    position: relative;
-    max-width: 100%;
-    maring: 0 auto;
-}
-
-.numbertext .text{
-    position: absolute; /* Position the background text */
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
-}
 
 
 .footer {
