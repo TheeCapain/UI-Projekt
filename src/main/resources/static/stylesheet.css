@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: "Calibri Light", serif;
 }
 
 a:link {
@@ -43,7 +44,7 @@ body {
 /* Logo attributes*/
 .logo {
     position: absolute;
-    margin-left: 15%;
+    margin-left: 5%;
     padding-right: 50%;
 }
 
@@ -64,7 +65,7 @@ body {
 .logo_container {
     height: 100%;
     position: relative;
-    margin-left: 15%;
+    margin-left: 10%;
     display: table;
     float: left;
 }
