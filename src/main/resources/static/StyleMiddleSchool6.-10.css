@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: "Calibri Light", serif;
 }
 
 a:link {
@@ -126,7 +127,7 @@ body {
     width: 42%;
     padding: 15px;
     border-radius: 5%;
-    background-image: url('t p');
+    background-image: url('Virtuous Circle 1_edited.png');
 }
 .top-box1 {
     margin-left: 100px;
