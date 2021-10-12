@@ -2,7 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box
+        }
 
+        img {
+            vertical-align: middle;
+        }
+
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 2px;
+            background-color: #bbb;
+            border-radius: 2%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {
+                font-size: 11px
+            }
+        }
+    </style>
     <title>Hjem</title>
 
     <link rel="stylesheet" href="StyleMiddleSchool6.-10.css">
@@ -49,25 +107,29 @@
 
 <div class="top-box1">
     <div class="box1" style="background-color: aquamarine">
-        <a href="/6-10kon"> HalvårKonkurrence</a>
+        <h1><a href="/6-10kon"> Halvårige konkurrencer</a></h1>
         <div>
-
-            <p style="color:black;">By default, the background image will repeat itself if it is smaller than the element where it is specified,
-            in this case the body element.</p>
-
+            <ol>
+                <li>Bedst til at lave anti-madspilds-retter!</li>
+                <li>Bedste tip om opbevaring af mad til bedre holdbarhed!</li>
+                <li>Bedste reklame mod madspil!</li>
+            </ol>
         </div>
     </div>
 
 </div>
 
 <div class="top-box">
-    <div class="box2" style="background-color: aquamarine" align="center">
-        <a href="https://thumbs.dreamstime.com/b/golden-casino-banner-you-won-lightbulbs-around-d-illustration-isolated-white-164803368.jpg">Tidligere vindere</a>
-
+    <div class="box" style="background-color: aquamarine" align="center">
+        <a href="/preschool">Tidligere vindere</a>
     </div>
 
     <div class="box" style="background-color: cornflowerblue" align="center">
+<<<<<<< HEAD
         <h1 style="color:black" href="https://kea.dk/om-kea/nyheder/kea-studerende-vandt-healthy-housing-awards">Lærings materialer</h1>
+=======
+        <a href="/highschool">Lærings materialer</a>
+>>>>>>> 123d96f1de8651aeb895120a8363e4fde78824ef
     </div>
 </div>
 
@@ -99,5 +161,56 @@
 </div>
 
 
+<!--
+<div class="footer-nav">
+
+    <p>Adresse: Guldbergsgade 29N 2200 København N</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/81/81341.png" alt="" width="25" height="25" align="right">
+    <p></p>
+    <img src="https://i0.wp.com/voxeuropae.com/wp-content/uploads/2019/02/SKq9yH-black-and-white-instagram-logo-png.png?fit=1200%2C1200&amp;ssl=1&amp;w=640"
+         alt="" width="25" height="25" align="right">
+    <p>Telefon: +45 46 46 00 00</p>
+
+    <p>Mail: <a href="mailto:Kea@Kea.dk">Madspild@Madspild.dk</a></p>
+    <div class="Social-Media">
+
+    </div>
+</div>
+-->
+
+
+<!--Javascript til slideren-->
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
 </body>
 </html>
