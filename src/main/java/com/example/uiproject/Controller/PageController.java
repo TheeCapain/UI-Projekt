@@ -27,7 +27,7 @@ public class PageController {
 
     @GetMapping("/gym")
     public String getHighschool (){
-        return "highschool";
+        return "gym";
     }
 
     @GetMapping("/tips")
