@@ -17,7 +17,7 @@ public class PageController {
 
     @GetMapping("/0-5")
     public String getPreschool (){
-        return "preschool";
+        return "0-5";
     }
 
     @GetMapping("/6-10")
@@ -27,7 +27,7 @@ public class PageController {
 
     @GetMapping("/gym")
     public String getHighschool (){
-        return "highschool";
+        return "gym";
     }
 
     @GetMapping("/tips")
@@ -42,7 +42,7 @@ public class PageController {
 
     @GetMapping("/0-5kon")
     public String get05kon (){
-        return "6-10kon";
+        return "0-5kon";
     }
 
     @GetMapping("/6-10kon")

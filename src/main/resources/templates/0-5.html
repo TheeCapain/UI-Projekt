@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 2px;
+            background-color: #bbb;
+            border-radius: 2%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {
+                font-size: 11px
+            }
+        }
+    </style>
+    <title>0.-5. Klassetrin</title>
+
+    <link rel="stylesheet" href="0-5.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">
+        <img style="font-size:8vw;" src="https://iconape.com/wp-content/png_logo_vector/environmental-friendly-logo.png"
+             alt="" width="75" height="75">
+    </div>
+
+    <div class="inner_header">
+        <div class="logo_container">
+            <h1>Green<span style="font-weight: 500">school</span></h1>
+        </div>
+        <ul class="navigation">
+            <a href="/">
+                <li>Hjem</li>
+            </a>
+            <a href="/0-5">
+                <li>0-5. klasse</li>
+            </a>
+            <a href="/6-10">
+                <li>6-10. klasse</li>
+            </a>
+            <a href="/gym">
+                <li>Gymnasium</li>
+            </a>
+            <a href="/tips">
+                <li>Tips</li>
+            </a>
+            <a href="/about">
+                <li>Om os</li>
+            </a>
+        </ul>
+    </div>
+</div>
+
+
+<div class="top-box1">
+    <div class="box1" style="background-color: aquamarine" align="center">
+        <h1><a href="/0-5kon">Månedens konkurrence</a></h1>
+        <p><br><br><br><br>Deltag i månedens konkurrence om flotteste tegning af madspild og vind nøgleringe til dig og
+        hele din klasse! Reglerne for deltagelse kan du læse mere om herinde.</p>
+    </div>
+
+</div>
+
+<div class="top-box">
+    <div class="box" style="background-color: aqua" align="center">
+        <h2><a href="/preschool">Tidligere vindere</a></h2>
+        <p><br><br><br><br>Har du lyst til at se de tidligere vindere af vores tegnekonkurrence? Få eventuelt lidt inspiration
+        til din egen tegning her.</p>
+    </div>
+
+    <div class="box" style="background-color: cornflowerblue" align="center">
+        <h2><a href="/highschool">Aktiviteter</a></h2>
+        <p><br><br><br><br>Som lærer eller forældre kan du finde inspiration til aktiviteter med fokus på madspild herinde.
+        Malebøger, spil, mm., der kan laves alene eller sammen.</p>
+    </div>
+</div>
+
+<div class="myYoutube">
+    <iframe id="youtube" width="600" height="280"
+            src="https://www.youtube.com/embed/fiMR9ebs334?autoplay=1&mute=1">
+    </iframe>
+</div>
+
+
+<!-- FOOTER START -->
+<div class="footer">
+    <div class="inner_footer">
+        <div class="logo_container"></div>
+        <img id="footerLogo" src=" https://iconape.com/wp-content/png_logo_vector/environmental-friendly-logo.png"
+             alt="">
+    </div>
+
+    <div class="footer_fourth">
+        <h1 id="Contact_info">Kontakt info</h1>
+        <a href=""> Adresse: Guldbergsgade 29N 2200 København N</a>
+        <a href="">Telefon nr: Telefon: +45 46 46 00 00</a>
+        <a href="mailto:Kea@Kea.dk">Mail: Madspild@Madspild.dk</a>
+    </div>
+</div>
+<!-- FOOTER SLUT -->
+
+
+<!--Javascript til slideren-->
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+</body>
+</html>
