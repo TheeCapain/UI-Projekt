@@ -55,4 +55,9 @@ public class PageController {
         return "gymkon";
     }
 
+    @GetMapping("/error")
+    public String getError () {
+        return "error";
+    }
+
 }
