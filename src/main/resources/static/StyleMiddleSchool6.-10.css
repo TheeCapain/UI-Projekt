@@ -126,6 +126,7 @@ body {
     width: 42%;
     padding: 15px;
     border-radius: 5%;
+    background-image: url('20409723.jpg');
 }
 .top-box1 {
     margin-left: 100px;
@@ -133,6 +134,7 @@ body {
     content: "";
     display: table;
     clear: both;
+
 }
 .box1 {
     margin-top: 20px;
@@ -144,6 +146,19 @@ body {
     width: 25%;
     padding: 15px;
     border-radius: 5%;
+    background-image: url('Untitled.png');
+}
+.box2 {
+    margin-top: 20px;
+    margin-left: 80px;
+    position: center;
+
+    float: left;
+    height: 200px;
+    width: 40%;
+    padding: 15px;
+    border-radius: 5%;
+    background-image: url('winner.jpg');
 }
 
 
@@ -184,7 +199,7 @@ float: right;
     overflow: hidden;
     padding: 25px 0;
     box-sizing: border-box;
-    background-color: #000080;
+    background-color: #7e685a;
 }
 
 .inner_footer {
