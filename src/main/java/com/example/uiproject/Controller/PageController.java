@@ -17,7 +17,7 @@ public class PageController {
 
     @GetMapping("/0-5")
     public String getPreschool (){
-        return "preschool";
+        return "0-5";
     }
 
     @GetMapping("/6-10")
